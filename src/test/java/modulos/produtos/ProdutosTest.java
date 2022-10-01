@@ -36,10 +36,9 @@ public class ProdutosTest {
         navegador.get("http://automationpractice.com/index.php?id_product=1&controller=product");
         navegador.findElement(By.cssSelector("button[class='exclusive']")).click();
 
-        // Verificar se o produto foi corretamente inserido no carrinho
+        // Verificar se o produto foi corretamente inserido no carrinho validando as informações da última tela aberta
         //String textoDoElemento = navegador.findElement(By.cssSelector("span[id='layer_cart_product_title']")).getText();
         //System.out.println("Texto: " + textoDoElemento);
-
         //Assertions.assertEquals("Faded Short Sleeve T-shirts", textoDoElemento);
     }
 
